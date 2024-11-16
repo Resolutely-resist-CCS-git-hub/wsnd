@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code test</title>
+    <link rel="stylesheet" type="text/css" href="https://resolutely-resist-ccs-git-hub.github.io/my-website/page/codetest/styles/rainbow.min.css"/>
+    <script src="https://resolutely-resist-ccs-git-hub.github.io/my-website/page/codetest/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+    <style>
+        .gg{
+            font-family: "Nerd Font", source-code-pro, Menlo, Monaco, Consolas, monospace;
+            font-size: 1rem;
+            display: inline-block;
+            padding: 0 0.5rem 4px;
+            line-height: 1.25rem;
+            color: white;
+            vertical-align: middle;
+            border: solid 2px #b7bdc8;
+            border-bottom-color: #b7bdc8;
+            border-radius: 5px;
+            background-color: #010409;
+        }textarea{
+            background-color: #b7bdc8;
+            width: 500px;
+            height: 200px;
+            resize: none;
+            border: solid 8px #b7bdc8;
+            border-bottom-color: #b7bdc8;
+            border-radius: 5px;     
+            font-family: "Nerd Font", source-code-pro, Menlo, Monaco, Consolas, monospace;       
+        }.textare{
+            background-color: #b7bdc8;
+            width: 500px;
+            height: 200px;
+            resize: none;
+            border: solid 10px #b7bdc8;
+            border-bottom-color: #b7bdc8;
+            border-radius: 5px;     
+            font-family: "Nerd Font", source-code-pro, Menlo, Monaco, Consolas, monospace;       
+        }
+    </style>
+</head>
+<body>
+    <textarea name="" id="text1">
+        
+    </textarea>
+    <div class="textare" id="test">
+
+    </div>
+    <script>
+        const textarea = document.getElementById('text1');
+        textarea.addEventListener('input', function(e) { 
+            var div = document.getElementById('test');
+            var test = document.getElementById("text1");
+            var text1 = test.value;
+            div.innerHTML = text1;
+        });
+    </script>
+</body>
+</html>
